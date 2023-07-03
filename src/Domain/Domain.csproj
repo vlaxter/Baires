@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Baires.Domain</RootNamespace>
+        <AssemblyName>Baires.Domain</AssemblyName>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Enums\**" />
+      <Compile Remove="Exceptions\**" />
+      <Compile Remove="ValueObjects\**" />
+      <EmbeddedResource Remove="Enums\**" />
+      <EmbeddedResource Remove="Exceptions\**" />
+      <EmbeddedResource Remove="ValueObjects\**" />
+      <None Remove="Enums\**" />
+      <None Remove="Exceptions\**" />
+      <None Remove="ValueObjects\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.0.1" />
+    </ItemGroup>
+
+</Project>
